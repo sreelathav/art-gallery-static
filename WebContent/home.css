@@ -1,0 +1,142 @@
+@CHARSET "UTF-8";
+/* general for every body, unless over stated by another assigning */
+body
+{   
+  width: 80%;  
+  margin: 0 auto;
+  background-color: #cd919e;
+}
+ #home, #codeSchool, #showMenuItem
+{ 
+  background-image: url("images/backimage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#maincontent
+{
+  width:100%;
+}
+#gallery #maincontent 
+{    
+  border: 0.25em solid grey;  
+  float: right;  
+}
+
+#navigation 
+{  
+  width: 100%; 
+}
+
+#tabs
+{    
+  margin: 30;
+  padding: 30;
+  text-align: center;
+}
+#tabs li
+{ 
+	display: inline;
+	border-top: .2em solid #cd8c95;
+    border-left: .2em solid #cd8c95;
+    border-right: .2em solid #cd8c95;
+    border-bottom: .5em solid #344152;
+}
+
+#home #tabs a , #codeSchool #tabschool a, #gallery #tabs a 
+{
+  text-decoration: none;	
+  padding: 0.25em 1em;
+  background-color: #816687;
+  color: #fff;
+}
+
+#header 
+{   
+  width: 100%; 
+  text-align: center;
+}
+ #header h2
+{ 
+	background-color: #cd6889;
+}
+
+#footer 
+{ 
+  width: 100%;
+  text-align: center;
+  color: #816687;
+  font-family: fantasy;	
+  font-size: 1.0em;
+  position:fixed; 
+  left:0px; bottom:0px;   
+  background-color: #cd8c95;
+  background-position: center;
+  background-size: cover; 
+  clear: both;
+}
+
+#primary 
+{  
+  width: 49%;  
+  float: left;  
+}
+#secondary 
+{  
+  width: 49%;  
+  float: right;
+}
+#paintings
+{
+	width: 90%;
+	border: 0.25em solid grey;
+	float: middle;
+}
+/* box for each form element */
+#commentbox, #formbox
+{
+box-sizing:border-box;
+width:80%;
+border:0.1em solid #344152;
+float:left;
+}
+/*Different back ground colors for 2 unequal columns  of code school page */
+#codeSchool #primary
+{
+	width:30%;
+	background-color: #cd8c95;
+	color: #e0ffff;
+}
+/* displaying second column into 3 columns */
+#codeSchool #secondary
+{
+	width:68%;
+	font-family: cursive;
+	background-color: #eab5c5;
+	 -webkit-column-count: 3;
+      -moz-column-count: 3;
+           column-count: 3;
+     -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px; 
+}
+/* Grouping same font family body elements into single CSS element */	
+#home,  #photographs, #snackBarMenu
+{
+	font-family: cursive;
+}
+ #paintings, #salads, #snatches, #sweets
+{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+}
+#galleryImage,  #snackbarimage, #backHomeImage
+{
+    text-align: center; 
+}
+/* shadowing text used for specific text */
+p.shadow
+{
+	text-shadow: #eab5c5 4px -4px 2px;
+}
+

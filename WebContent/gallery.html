@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Gallery</title>
+    <link type="text/css" rel="stylesheet" href="home.css" media="screen" />
+  </head>
+  <body id = "gallery">
+    <div id="header"> 
+      <h1>
+        GALLERY        
+      </h1>  
+    </div>
+    <div id = "galleryImage">
+      <img src="images/gallery.JPG" alt = "Logo" height = "81" width = "360" >
+    </div>
+    <!-- Navigation leads to 2 pages -->
+    <div id="navigation">  
+      <ul id = "tabs">    
+        <li id = "tab1"><a href="paintings.html">PAINTINGS </a></li>  
+        <li id = "tab2"><a href = "photographs.html"> PHOTOGRAPHS </a></li>    
+      </ul>  
+    </div>  
+    <!-- 2 column layout. 2 columns contain 2 form input elements -->  
+    <div id="maincontent"> 
+      <div id="primary">
+        <p>
+          Paintings section display many paintings which are for sale.
+          They are mainly of four media: water colors, oil paints, pen and inks,
+          acrylic paints and also mixed media.
+          In the painting section one can buy a painting or just have a look around.  
+          The list of paintings is available in the section with the mention of 
+          price and the artist and the title. Other relevant information can be 
+          available from there. 
+        </p>  
+        <p>  
+            One can leave their opinion about the art works
+            for the benefit of artists.
+        </p>
+        <div id = "commentbox"> 
+        <form action="leave your comments" method="post">
+           <textarea name="comments" cols="30" rows="8" ></textarea>
+           <input type="submit" name="submit" value="Leave your comments"  />
+         </form>   
+      </div>
+      </div>
+      <div id="secondary">
+        <p>
+          Original photographs available for sale. One can also 
+          order for the reprints in different sizes. The list is available
+          in the section. On request photographs can be printed onto Canvas.
+        </p>  
+        <p>
+          One can submit the following form for letting your own 
+          art works for sale or to display in the Gallery.
+        </p>
+        <div id = "formbox">
+        <FORM  action = "artistinfo/upload" method="post" enctype="multipart/form-data">
+           <P>
+             Artist name: <INPUT type="text" name="artistname"><BR>
+             Mobile: <INPUT type="text" name="mobile"><BR>
+             email: <INPUT type="text" name="email"><BR>
+             Number of art pieces: <INPUT type ="text" name="noOfPieces"><BR>
+             Details of art in a file:<input type="file" name="userfile" value=""  /><BR>
+             <INPUT type="radio" name="sale" value="For Sale"> For Sale 
+             <INPUT type="radio" name="display" value="For Display"> For Display<BR> 
+             <INPUT type="submit" value="Submit"> <INPUT type="reset">
+           </P>
+         </FORM>
+         </div> 
+      </div>
+    </div>
+    <div id = "footer">
+      <p class= "shadow">
+        Press image to
+        <a href= "home.html"><img src="images/logo.JPG" alt = "Logo" height = "30" width = "30" ></a>
+         go back to Home page.
+      </p>
+    </div>
+  </body>
+</html>
